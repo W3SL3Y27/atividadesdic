@@ -25,3 +25,17 @@ for aluno in notas_alunos:
 
 
 #3
+
+ivros = [
+    {"titulo":"naruto","autor":"Masashi Kishimoto"},
+    {"titulo":"bleach","autor":"Tite Kubo"},
+    {"titulo":"cavaleiros do zodiaco","autor":"Masami Kurumada"},
+]
+
+perg = input("digite um titulo: ")
+
+for livro in livros:
+    if perg == livro["titulo"]:
+        print(livro)
+    else:
+        print("nao tem esse titulo")
