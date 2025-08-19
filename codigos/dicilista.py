@@ -26,7 +26,7 @@ for aluno in notas_alunos:
 
 #3
 
-ivros = [
+livros = [
     {"titulo":"naruto","autor":"Masashi Kishimoto"},
     {"titulo":"bleach","autor":"Tite Kubo"},
     {"titulo":"cavaleiros do zodiaco","autor":"Masami Kurumada"},
@@ -39,3 +39,38 @@ for livro in livros:
         print(livro)
     else:
         print("nao tem esse titulo")
+
+#4
+
+funcionarios = [
+    {"nome": "Maria", "salario": 2500},
+    {"nome": "Carlos", "salario": 1800},
+    {"nome": "João", "salario": 2300},
+    {"nome": "Ana", "salario": 3200}
+]
+
+total_salarios = 0
+
+for funcionario in funcionarios:
+    total_salarios += funcionario["salario"]
+
+print(f"total gasto com funcionario: {total_salarios}")
+
+#5
+
+produtos = [
+    {"nome": "Arroz", "preco": 20},
+    {"nome": "Feijão", "preco": 12},
+    {"nome": "Macarrão", "preco": 8},
+    {"nome": "Leite", "preco": 5}
+]
+
+produto_mudança = "Feijão"
+novo_preco = 15
+
+for produto in produtos:
+    if produto["nome"] == produto_mudança:
+        produto["preco"] = novo_preco
+        break 
+
+print(produtos)
